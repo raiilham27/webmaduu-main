@@ -1,0 +1,412 @@
+/* ======= RESET & BASE ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* ======= NAVIGATION ======= */
+nav {
+  background-color: #f7b500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logo img {
+  width: 110px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #fff;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #333;
+}
+
+/* ======= HERO SECTION ======= */
+.hero {
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 2rem;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  color: #fff;
+  text-align: left;
+}
+
+.hero-text h1 {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.hero-text b {
+  color: #f7b500;
+}
+
+.cta-button {
+  background-color: #f7b500;
+  color: #333;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #d99d00;
+}
+
+.product-image img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* ======= ABOUT SECTION ======= */
+.about {
+  background-color: #fffaf0;
+  padding: 4rem 2rem;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.about-intro {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+
+.about-intro li {
+  font-weight: 500;
+  color: #444;
+  line-height: 2;
+}
+
+/* Ingredients Cards */
+.ingredients {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.ingredient-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.ingredient-card:hover {
+  transform: translateY(-5px);
+}
+
+.ingredient-icon img {
+  width: 70px;
+  margin-bottom: 1rem;
+}
+
+.ingredient-card h3 {
+  color: #f7b500;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* ======= PRODUCTS ======= */
+.products {
+  background-color: #fef8e7;
+  padding: 4rem 2rem;
+}
+
+.products-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.products-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.products-intro {
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 260px;
+  padding: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-bottle img {
+  width: 140px;
+}
+
+.product-card h3 {
+  color: #f7b500;
+  margin-top: 1rem;
+}
+
+/* ======= ARTICLES ======= */
+.articles {
+  padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.articles-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.articles-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.article-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.article-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.article-card:hover {
+  transform: translateY(-6px);
+}
+
+.article-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.article-content {
+  padding: 1.2rem;
+}
+
+.article-content h3 {
+  color: #f7b500;
+  margin-bottom: 0.5rem;
+}
+
+.article-content p {
+  color: #555;
+  font-size: 0.95rem;
+}
+
+/* ======= FOOTER ======= */
+footer {
+  background-color: #f7b500;
+  padding: 3rem 2rem;
+  color: #333;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.footer-container h3 {
+  margin-bottom: 1rem;
+}
+
+.footer-logos img {
+  width: 60px;
+  margin-right: 0.5rem;
+}
+
+.footer-right img {
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* ======= RESPONSIVE ======= */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .product-image img {
+    width: 200px;
+  }
+
+  .product-grid,
+  .ingredients,
+  .article-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #f7b500;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links li {
+    padding: 0.8rem 0;
+  }
+
+  .hero-text h1 {
+    font-size: 1rem;
+  }
+
+  .ingredient-card,
+  .product-card,
+  .article-card {
+    width: 90%;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 4rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 0.9rem;
+    padding: 1rem;
+  }
+
+  .cta-button {
+    padding: 0.6rem 1.5rem;
+  }
+}
